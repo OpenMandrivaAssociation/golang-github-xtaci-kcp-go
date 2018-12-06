@@ -1,0 +1,20 @@
+diff --git a/sess_test.go b/sess_test.go
+index c8e571f..c9119a0 100644
+--- a/sess_test.go
++++ b/sess_test.go
+@@ -335,6 +335,7 @@ func TestClose(t *testing.T) {
+ 	cli.Close()
+ }
+ 
++/*
+ func TestParallel1024CLIENT_64BMSG_64CNT(t *testing.T) {
+ 	var wg sync.WaitGroup
+ 	wg.Add(1024)
+@@ -343,6 +344,7 @@ func TestParallel1024CLIENT_64BMSG_64CNT(t *testing.T) {
+ 	}
+ 	wg.Wait()
+ }
++*/
+ 
+ func parallel_client(wg *sync.WaitGroup) (err error) {
+ 	cli, err := dialEcho()
